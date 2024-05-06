@@ -28,16 +28,26 @@ origin  https://github.com/GDSC-KNU/3rd-sp-3-FE.git (push)
 
 # remote에 파일 올리기
 
-## 1. `git add {파일명}` 또는 `git add .`
+## 0. 변경사항 pull
+
+`git pull origin {branch-name}` 을 입력하여 현재 브랜치에 대한 변경사항을 반영합니다.
+
+## 1. 파일 추가
+
+`git add {파일명}` 또는 `git add .`
 
 - 작업 디렉토리상의 변경내용을 스테이징 영역에 추가
 - 다음 commit 을 진행하기 전까지 변경한 파일들을 모아놓기 위해 사용한다.
 
-## 2. `git commit -m "commit message"`
+## 2. 커밋 날리기
+
+`git commit -m "commit message"`
 
 커밋메세지를 입력하여 commit 한다.
 
-## 3. `git push origin {branch-name}`
+## 3. 변경사항 반영 및 pr 생성
+
+`git push origin {branch-name}`
 
 현재 브랜치에서 변경내용을 remote에 반영한다.
 
